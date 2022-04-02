@@ -24,7 +24,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
   }
 
   return (
-    <div>
+    <div className="">
       <h1>Selected Items : {cart.length} </h1>
 
       {cart.map((tshirt) => (

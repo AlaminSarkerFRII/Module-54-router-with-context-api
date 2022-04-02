@@ -7,7 +7,7 @@ const Tshirt = (props) => {
   const { title, category, description, image, price, rating } = tshirt;
 
   return (
-    <div className="t-shirt">
+    <div className="t-shirt text-center">
       <div className="t-shirt-images">
         <img src={image} alt="" />
       </div>
@@ -16,8 +16,12 @@ const Tshirt = (props) => {
           Tshirt : {title.length > 20 ? title.slice(0, 10) + "..." : title}
         </h4>
         <p>Price :{price}</p>
-
-        <button onClick={() => handleAddToCart(tshirt)}>Add To Cart</button>
+        <button
+          onClick={() => handleAddToCart(tshirt)}
+          className="bg-orange-400 p-2"
+        >
+          Add To Cart
+        </button>
       </div>
     </div>
   );
